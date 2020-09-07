@@ -1,39 +1,25 @@
-import { render } from 'react-dom';
-import React, { Component, Fragment } from 'react';
-import TopBar from './TopBar';
-import ProductList from './ProductList';
-import Hello  from './Hello';
-import './style.css';
-
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: 'React'
-    };
-  }
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
 
 
-  render() {
-    return (
-      <Fragment>
-       <TopBar/>
-        <div className="container">
-          <ProductList />
-        </div>
-      </Fragment>
-    );
-  }
-}
-
-render(<App />, document.getElementById('root'));
- 
-       
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
 
 
 
-  
 
 
-   
+
+
+
+
+
+
+

@@ -1,10 +1,10 @@
 import React from 'react';
-import {products} from './products';
 
-const ProductAlerts = ({ product, notify }) => {
+
+const ProductAlerts = ({ product:{price}, notify }) => {
   let productAlerts;
 
-  if (product.price > 700) {
+  if (price > 700) {
     productAlerts = <p>
       <button onClick={notify}>Notify Me</button>
     </p>;
